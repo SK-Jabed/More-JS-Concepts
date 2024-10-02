@@ -1,42 +1,42 @@
-function a(){
-    console.log('a')
+function a() {
+    console.log("a")
     b();
-    console.log('aa');
+    console.log("aa");
 }
 
-function b(){
-    console.log('b');
+function b() {
+    console.log("b");
     d();
-    console.log('bb');
+    console.log("bb");
 }
 
-function d(){
-    console.log('d');
-    console.log('dd');
+function d() {
+    console.log("d");
+    console.log("dd");
 }
 
-function x(){
-    console.log('x');
+function x() {
+    console.log("x");
     y()
-    console.log('xx');
+    console.log("xx");
 }
 
-function y(){
-    console.log('y');
+function y() {
+    console.log("y");
     z();
-    console.log('yy');
+    console.log("yy");
 }
 
-function z(){
-    console.log('z');
-    console.log('zz');
+function z() {
+    console.log("z");
+    console.log("zz");
 }
 
-setTimeout( () =>{
-    console.log('inside timeout')
+setTimeout( () => {
+    console.log("inside timeout")
 }, 2000 )
 
-fetch('https://jsonplaceholder.typicode.com/todos/1')
+fetch("https://jsonplaceholder.typicode.com/todos/1")
       .then(response => response.json())
       .then(json => console.log(json))
 
